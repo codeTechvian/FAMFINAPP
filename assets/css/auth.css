@@ -1,0 +1,144 @@
+/* Authentication Page Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--page-bg);
+}
+
+.auth-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-box .logo-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 30px;
+}
+
+.auth-box .logo-mark {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    display: block;
+}
+
+.auth-box .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-green);
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+.auth-box h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: var(--primary-text);
+    font-weight: 600;
+}
+
+.auth-box p {
+    margin-bottom: 25px;
+    color: var(--secondary-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--secondary-text);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    background-color: var(--card-bg);
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 3px var(--light-green);
+}
+
+.btn-primary {
+    width: 100%;
+    background: var(--primary-green);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-green);
+}
+
+.divider {
+    margin: 25px 0;
+    font-size: 12px;
+    color: var(--secondary-text);
+    font-weight: 400;
+}
+
+.link-text {
+    display: block;
+    margin-top: 15px;
+    color: var(--primary-green);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.link-text:hover {
+    text-decoration: underline;
+}
+
+.form-footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--secondary-text);
+}
+
+.form-footer a {
+    color: var(--primary-green);
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}

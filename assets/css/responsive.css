@@ -1,0 +1,215 @@
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .dashboard-lower {
+        grid-template-columns: 1fr 340px;
+        gap: 20px;
+    }
+
+    .dashboard-grid {
+        gap: 20px;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card .value {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .dashboard-lower {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-secondary {
+        order: -1;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --sidebar-width: 280px;
+    }
+
+    .app-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "main";
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        transform: translateX(-100%);
+        box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .top-header {
+        padding: 0 16px;
+    }
+
+    .header-label {
+        display: none;
+    }
+
+    .user-name {
+        display: none;
+    }
+
+    .dashboard-content {
+        padding: 20px 16px;
+    }
+
+    .welcome-section h1 {
+        font-size: 24px;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .summary-card {
+        padding: 20px;
+    }
+
+    .summary-card .value {
+        font-size: 24px;
+    }
+
+    .expense-item {
+        padding: 14px 16px;
+    }
+
+    .expense-amount {
+        font-size: 13px;
+    }
+
+    .category-list {
+        padding: 8px 16px 16px;
+    }
+
+    .card-header {
+        padding: 16px;
+    }
+
+    .auth-box {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-header {
+        height: 56px;
+    }
+
+    .header-logo {
+        width: 28px;
+        height: 28px;
+    }
+
+    .user-avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+    .welcome-section h1 {
+        font-size: 22px;
+    }
+
+    .summary-card .label {
+        font-size: 12px;
+    }
+
+    .summary-card .value {
+        font-size: 22px;
+    }
+
+    .summary-card .small {
+        font-size: 11px;
+    }
+
+    .expense-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .expense-amount {
+        align-self: flex-end;
+        margin-left: 0;
+    }
+
+    .category-progress {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .category-percentage {
+        min-width: auto;
+        text-align: left;
+    }
+
+    .auth-box {
+        padding: 24px 20px;
+    }
+
+    .auth-box h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-content {
+        padding: 16px 12px;
+    }
+
+    .card-header {
+        padding: 14px 16px;
+    }
+
+    .category-list {
+        padding: 8px 16px 16px;
+    }
+
+    .expense-item {
+        padding: 12px 16px;
+    }
+}
+
+/* Landscape mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .sidebar {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+}
